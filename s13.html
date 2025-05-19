@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>s13</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(circle, #0a0a0a, #000000);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      overflow: hidden;
+    }
+
+    .s13 {
+      font-size: 10rem;
+      color: #ff0055;
+      text-shadow:
+        0 0 10px #ff0055,
+        0 0 20px #ff0055,
+        0 0 40px #ff1177,
+        0 0 80px #ff3377;
+      letter-spacing: 0.2em;
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        text-shadow:
+          0 0 10px #ff0055,
+          0 0 20px #ff0055,
+          0 0 40px #ff1177,
+          0 0 80px #ff3377;
+      }
+      50% {
+        text-shadow:
+          0 0 20px #ff3377,
+          0 0 40px #ff0055,
+          0 0 60px #ff1177,
+          0 0 100px #ff0055;
+      }
+    }
+
+    .avatars {
+      display: flex;
+      gap: 4rem;
+      margin-top: 3rem;
+    }
+
+    .avatar {
+      text-align: center;
+    }
+
+    .avatar img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      box-shadow: 0 0 20px #ff0055;
+      transition: transform 0.3s ease;
+    }
+
+    .avatar img:hover {
+      transform: scale(1.1);
+    }
+
+    .label {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      color: #ff0055;
+      text-shadow: 0 0 10px #ff0055;
+    }
+  </style>
+</head>
+<body>
+  <div class="s13">s13</div>
+  <div class="avatars">
+    <div class="avatar">
+      <img src="https://cdn.discordapp.com/avatars/1038166372447944726/1b11d77efe6bed72fed10e04351c6ec8.png?size=512" alt="zed">
+      <div class="label">zed</div>
+    </div>
+    <div class="avatar">
+      <img src="https://cdn.discordapp.com/avatars/1333202348373180489/8f42401e07cb463c7e6df38a36751625.png?size=512" alt="ace">
+      <div class="label">ace</div>
+    </div>
+  </div>
+</body>
+</html>
