@@ -8,7 +8,7 @@
     body {
       margin: 0;
       height: 100vh;
-      background: #000000; /* Pure black background */
+      background: #000000;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -51,6 +51,8 @@
       display: flex;
       gap: 4rem;
       margin-top: 3rem;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .avatar {
@@ -104,16 +106,20 @@
   <div class="s13">s13</div>
   <div class="avatars">
     <div class="avatar">
-      <img src="https://cdn.discordapp.com/avatars/1038166372447944726/1b11d77efe6bed72fed10e04351c6ec8.png?size=512" alt="zed">
+      <img src="https://cdn.discordapp.com/avatars/1038166372447944726/720ae31cd7081a9902c7ba0715091d36.png?size=512" alt="zed">
       <div class="label">zed</div>
     </div>
     <div class="avatar">
       <img src="https://cdn.discordapp.com/avatars/1333202348373180489/8f42401e07cb463c7e6df38a36751625.png?size=512" alt="ace">
       <div class="label">ace</div>
     </div>
+    <div class="avatar">
+      <img src="https://cdn.discordapp.com/avatars/1031675576676786256/ac26468840b2b2c78c567a96bd82401f.png?size=512" alt="netsec">
+      <div class="label">netsec</div>
+    </div>
   </div>
 
-  <a href="info.html">
+  <a href="info">
     <button class="info-button">info</button>
   </a>
 </body>
