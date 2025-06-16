@@ -1,127 +1,73 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>s13 | Anti-Extortion Taskforce</title>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <meta charset="UTF-8">
+  <title>Cya s13</title>
   <style>
-    :root {
-      --bg: #0e0f11;
-      --accent: #00ffd0;
-      --text: #e0e0e0;
-      --card-bg: #1c1f24;
-      --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      font-family: var(--font);
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      padding: 2rem;
+      height: 100vh;
+      background: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+      position: relative;
     }
 
-    header, section, footer {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-      background-color: var(--card-bg);
-      border-radius: 10px;
-      margin-bottom: 2rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-      animation: fadeIn 1s ease-in-out forwards;
-      opacity: 0;
+    h1 {
+      font-size: 5rem;
+      z-index: 2;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
     }
 
-    header h1 {
-      color: var(--accent);
-      font-size: 2.5rem;
+    .fog {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(ellipse at center, rgba(255,255,255,0.05) 0%, transparent 70%);
+      animation: drift 60s linear infinite;
+      z-index: 1;
+      pointer-events: none;
     }
 
-    .tagline {
-      font-style: italic;
-      color: #aaa;
-      margin-top: -1rem;
+    .fog::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(ellipse at center, rgba(255,255,255,0.04) 0%, transparent 80%);
+      animation: drift2 90s linear infinite;
     }
 
-    h2 {
-      color: var(--accent);
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    a {
-      color: var(--accent);
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #888;
-    }
-
-    @keyframes fadeIn {
+    @keyframes drift {
+      from {
+        transform: translate(-25%, -25%);
+      }
       to {
-        opacity: 1;
+        transform: translate(0%, 0%);
+      }
+    }
+
+    @keyframes drift2 {
+      from {
+        transform: translate(0%, 0%);
+      }
+      to {
+        transform: translate(-25%, -25%);
       }
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>s13</h1>
-    <p class="tagline">im too fkn tired for this lmao.</p>
-    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_j1adxtyb.json" background="transparent" speed="1" style="width: 100%; height: 200px;" loop autoplay></lottie-player>
-  </header>
-
-  <section>
-    <h2>About s13</h2>
-    <p>s13 is a low-profile, high-impact initiative focused on digital anti-extortion and personal data protection. We operate with a core belief: <strong>privacy is a human right</strong>.</p>
-    <p>Using advanced OSINT tools and ethical intelligence methods, we counteract threats like doxxing, blackmail, and online harassment.</p>
-  </section>
-
-  <section>
-    <h2>What We Do</h2>
-    <ul>
-      <li>Investigate threats through open-source intelligence (OSINT)</li>
-      <li>Assist victims in taking down malicious content</li>
-      <li>Provide tactical digital hygiene guidance</li>
-      <li>Help clean up leaked or exposed information</li>
-      <li>Push back on social engineering and blackmail schemes</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Founder</h2>
-    <p><strong>zed</strong> — digital privacy advocate, OSINT specialist, and founder of s13. Zed operates under a privacy-first policy, working behind the scenes to help individuals regain control of their online lives.</p>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>If you're in trouble, need support, or want to report an issue, reach out.</p>
-    <p>Email: <a href="mailto:sacramentozed@proton.me">sacramentozed@proton.me</a></p>
-    <p> my discord is @sql.injec</p>
-    <p>now go to sleep or whatever u wanna do cuz like im a lil bored and I AM NOT finna upd this page for like a couple months cuz im like so rich and cool so i can go on so many "work" trips</a></p>
-  </section>
-
-  <footer>
-    &copy; 2025 s13 | Operated by Zed | No trackers. No cookies. No compromises.
-  </footer>
-
-  <script>
-    document.querySelectorAll('section, header').forEach((el, i) => {
-      setTimeout(() => el.style.opacity = 1, i * 200);
-    });
-  </script>
+  <div class="fog"></div>
+  <h1>Cya s13</h1>
+  <h1>in the future i will come, lastly i love you all</h1>
 </body>
 </html>
