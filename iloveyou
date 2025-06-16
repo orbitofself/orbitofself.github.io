@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>iloveyouplug</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 5rem;
+      z-index: 2;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+
+    .fog {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(ellipse at center, rgba(255,255,255,0.05) 0%, transparent 70%);
+      animation: drift 60s linear infinite;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .fog::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(ellipse at center, rgba(255,255,255,0.04) 0%, transparent 80%);
+      animation: drift2 90s linear infinite;
+    }
+
+    @keyframes drift {
+      from {
+        transform: translate(-25%, -25%);
+      }
+      to {
+        transform: translate(0%, 0%);
+      }
+    }
+
+    @keyframes drift2 {
+      from {
+        transform: translate(0%, 0%);
+      }
+      to {
+        transform: translate(-25%, -25%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="fog"></div>
+  <h1>iloveyouplug</h1>
+</body>
+</html>
